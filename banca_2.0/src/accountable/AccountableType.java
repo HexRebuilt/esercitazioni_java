@@ -1,5 +1,5 @@
 package accountable;
 
-enum AccountableType {
+public enum AccountableType {
     STIPENDIO,ABBONAMENTO;
 }

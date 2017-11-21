@@ -5,10 +5,12 @@ public class Stipendio extends AbstractAccountable {
 
     public Stipendio(double importo) {
         this.importo = importo;
+        this.type=AccountableType.STIPENDIO;
     }
 
     public double getImporto() {
         return importo;
     }
+
 }
 

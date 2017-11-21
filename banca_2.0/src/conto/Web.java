@@ -1,5 +1,8 @@
 package conto;
 
+import exceptions.InvalidOP;
+import exceptions.LoginError;
+
 public class Web extends Conto{
 
     final String login;
@@ -17,7 +20,7 @@ public class Web extends Conto{
     }
 
     @Override
-    public boolean operazione(double valore){
+    public boolean operazione(double valore) throws LoginError{
         //controllo che la password sia stata cambiata
         if(firstlogin){
             psw=resetpsw(psw);//controllo che sia il
@@ -32,8 +35,8 @@ public class Web extends Conto{
             return true;
         }
         else{//ho sbagliato il login
-            System.out.println("Credenziali errate, riprovare");
-            return false;
+            throw new LoginError();
+
         }
 
     }

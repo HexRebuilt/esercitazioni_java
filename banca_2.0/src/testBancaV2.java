@@ -1,3 +1,5 @@
+import accountable.AccountableType;
+
 public class testBancaV2 {
     public static void main(String[] args) {
 
@@ -24,7 +26,14 @@ public class testBancaV2 {
 
         //dettagli del conto
         bank.dettagliConto("PAPER0N1-2");
-        bank.dettagliConto("PAPER0N1-3");
+//        bank.dettagliConto("PAPER0N1-3");
+
+        //creo accountable
+        bank.creaAccountable("PAPER0N1-0", AccountableType.STIPENDIO,100);
+        bank.creaAccountable("PAPER0N1-0", AccountableType.ABBONAMENTO,50);
+
+        bank.finemese();
+        bank.saldo("PAPER0N1-0");
 
     }
 }

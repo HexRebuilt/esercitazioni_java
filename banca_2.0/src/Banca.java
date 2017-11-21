@@ -1,7 +1,14 @@
+import accountable.AbbonamentoSky;
+import accountable.Accountable;
+import accountable.AccountableType;
+import accountable.Stipendio;
 import conto.Conto;
 import conto.Corrente;
 import conto.Deposito;
 import conto.Web;
+import exceptions.InvalidOP;
+import exceptions.LoginError;
+import exceptions.SaldoInsufficiente;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,12 +17,16 @@ public class Banca {
     final String radiceIban;
     private HashMap<String,Conto> conti;
     private int numConti;
+    private HashMap<String,Accountable[]> accountableHashmap;
 
     public Banca(String radiceIban) {
         this.radiceIban = radiceIban;
         this.conti = conti;
         this.numConti=0;
         conti= new HashMap<>();
+
+        this.accountableHashmap=accountableHashmap;
+        accountableHashmap=new HashMap<>();
     }
 
     private String generateIban(){
@@ -49,10 +60,15 @@ public class Banca {
         System.out.println("Il saldo del conto "+iban+" e' "+conti.get(iban).getSaldo());
         }
 
-    public void operazB (String iban,double valore){
-        if (!conti.get(iban).operazione(valore)){
-            //se ritorna true tutto è andato a buon fine e non serve far altro
-            System.out.println("Non e' stato possibile svolgere l'operazione sul conto "+iban);
+    public void operazB (String iban,double valore)  {
+        try {
+            conti.get(iban).operazione(valore);
+        } catch (SaldoInsufficiente saldoInsufficiente) {
+            saldoInsufficiente.printStackTrace();
+        } catch (InvalidOP invalidOP) {
+            invalidOP.printStackTrace();
+        } catch (LoginError loginError) {
+            loginError.printStackTrace();
         }
     }
 
@@ -60,8 +76,17 @@ public class Banca {
         System.out.println("Conto num "+iban+" cf: "+conti.get(iban).getCf()+" saldo: "+conti.get(iban).getSaldo());
     }
 
-    public void finemese(String giorno){
-        if (giorno==)
+    public void creaAccountable (String iban, AccountableType tipo, double valore){
+       conti.get(iban).createAccountable(valore,tipo);
+
+    }
+
+    public void finemese(){
+        int dim=conti.size();
+        for (int i=0;i<dim;i++) {
+            String iban=radiceIban+i; //e'lo stesso modo in cui creo gli iban
+            conti.get(iban).eseguiAccountable();
+        }
     }
 
 }

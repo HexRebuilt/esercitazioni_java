@@ -1,5 +1,7 @@
 package conto;
 
+import exceptions.InvalidOP;
+
 public class Deposito extends Conto {
 
     public Deposito(String iban, String cf) {
@@ -7,9 +9,9 @@ public class Deposito extends Conto {
     }
 
     @Override
-    public boolean operazione (double valore){
+    public boolean operazione (double valore) throws InvalidOP{
         if (valore < 0){
-            return false;
+            throw new  InvalidOP();
         }
         else{
             saldo=saldo+valore;
