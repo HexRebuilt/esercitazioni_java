@@ -6,6 +6,7 @@ import conto.Conto;
 import conto.Corrente;
 import conto.Deposito;
 import conto.Web;
+import exceptions.IbanInesistente;
 import exceptions.InvalidOP;
 import exceptions.LoginError;
 import exceptions.SaldoInsufficiente;
@@ -60,9 +61,14 @@ public class Banca {
         System.out.println("Il saldo del conto "+iban+" e' "+conti.get(iban).getSaldo());
         }
 
-    public void operazB (String iban,double valore)  {
+    public void operazB (String iban,double valore) {
         try {
-            conti.get(iban).operazione(valore);
+            if (conti.get(iban)==null){
+            System.out.println("Iban inesistente in questa banca");
+            }
+            else{
+                conti.get(iban).operazione(valore);
+            }
         } catch (SaldoInsufficiente saldoInsufficiente) {
             saldoInsufficiente.printStackTrace();
         } catch (InvalidOP invalidOP) {

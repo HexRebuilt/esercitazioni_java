@@ -15,11 +15,14 @@
       <file leaf-file-name="Conto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/conto/Conto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="322">
+              <caret line="29" column="94" lean-forward="false" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Conto#0;class#Conto#0" expanded="false" />
+                <element signature="method#operazione#0;class#Conto#0" expanded="false" />
                 <element signature="method#createAccountable#0;class#Conto#0" expanded="false" />
+                <element signature="method#eseguiAccountable#0;class#Conto#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -50,8 +53,8 @@
       <file leaf-file-name="Banca.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Banca.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+            <state relative-caret-position="280">
+              <caret line="66" column="65" lean-forward="false" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#generateIban#0;class#Banca#0" expanded="false" />
@@ -117,22 +120,9 @@
       <file leaf-file-name="testBancaV2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testBancaV2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbbonamentoSky.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/accountable/AbbonamentoSky.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding>
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -180,11 +170,12 @@
         <option value="$PROJECT_DIR$/src/testBancaV2.java" />
         <option value="$PROJECT_DIR$/src/conto/Deposito.java" />
         <option value="$PROJECT_DIR$/src/exceptions/LoginError.java" />
-        <option value="$PROJECT_DIR$/src/Banca.java" />
         <option value="$PROJECT_DIR$/src/exceptions/SaldoInsufficiente.java" />
         <option value="$PROJECT_DIR$/src/exceptions/InvalidOP.java" />
         <option value="$PROJECT_DIR$/src/conto/Conto.java" />
         <option value="$PROJECT_DIR$/src/conto/Web.java" />
+        <option value="$PROJECT_DIR$/src/exceptions/IbanInesistente.java" />
+        <option value="$PROJECT_DIR$/src/Banca.java" />
       </list>
     </option>
   </component>
@@ -396,12 +387,12 @@
       <workItem from="1510665858397" duration="2862000" />
       <workItem from="1510670610731" duration="6600000" />
       <workItem from="1510907284375" duration="5052000" />
-      <workItem from="1511270454156" duration="7724000" />
+      <workItem from="1511270454156" duration="8556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22238000" />
+    <option name="totallyTimeSpent" value="23070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -471,7 +462,10 @@
           <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Conto#0;class#Conto#0" expanded="false" />
+            <element signature="method#operazione#0;class#Conto#0" expanded="false" />
             <element signature="method#createAccountable#0;class#Conto#0" expanded="false" />
+            <element signature="method#eseguiAccountable#0;class#Conto#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -571,7 +565,10 @@
           <caret line="24" column="78" lean-forward="false" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Conto#0;class#Conto#0" expanded="false" />
+            <element signature="method#operazione#0;class#Conto#0" expanded="false" />
             <element signature="method#createAccountable#0;class#Conto#0" expanded="false" />
+            <element signature="method#eseguiAccountable#0;class#Conto#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -707,13 +704,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exceptions/SaldoInsufficiente.java">
+    <entry file="file://$PROJECT_DIR$/src/exceptions/InvalidOP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="54">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
-            <element signature="e#104#105#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#85#86#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conto/Web.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conto/Conto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="29" column="94" lean-forward="false" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Conto#0;class#Conto#0" expanded="false" />
+            <element signature="method#operazione#0;class#Conto#0" expanded="false" />
+            <element signature="method#createAccountable#0;class#Conto#0" expanded="false" />
+            <element signature="method#eseguiAccountable#0;class#Conto#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -729,24 +750,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exceptions/InvalidOP.java">
+    <entry file="file://$PROJECT_DIR$/src/exceptions/SaldoInsufficiente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#85#86#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/conto/Conto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createAccountable#0;class#Conto#0" expanded="false" />
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,26 +774,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testBancaV2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="201">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/conto/Web.java">
+    <entry file="file://$PROJECT_DIR$/src/exceptions/IbanInesistente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="72">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#97#98#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Banca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        <state relative-caret-position="280">
+          <caret line="66" column="65" lean-forward="false" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#generateIban#0;class#Banca#0" expanded="false" />
