@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="CalcolatriceLib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CalcolatriceLib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/CalcolatriceLib.jar!/" />
+    </SOURCES>
+  </library>
+</component>
