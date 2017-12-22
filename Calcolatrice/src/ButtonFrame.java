@@ -17,13 +17,14 @@ public class ButtonFrame extends JFrame{
 
         //DisplayPanel pann = new DisplayPanel();
         PanelLayout panel = new PanelLayout(calc); //bottoni
-        textField areaTesto = new textField();
+        lable areaTesto = new lable(calc);
         ImagePanel img = new ImagePanel();
         Container contentPane = getContentPane();
         JPanel jp = new JPanel();
         jp.setLayout(new BorderLayout());
         contentPane.add(jp);
-        areaTesto.setFont(new Font("Serif", Font.ITALIC,40));
+        areaTesto.setFont(new Font("Serif", Font.ITALIC,40) );
+
 
         //jp.add(pann, BorderLayout.NORTH);
         jp.add(panel);
@@ -32,13 +33,15 @@ public class ButtonFrame extends JFrame{
     }
 }
 
-class textField extends JTextField {
-    public textField() {
+class lable extends JLabel {
+    public lable(Calcolatrice calc) {
         setPreferredSize(new Dimension(350, 150));
-        setBackground(Color.ORANGE);
-
+        setBackground(Color.blue);
     }
+
 }
+
+//TODO metto nell'action listener e performed   this.setText(calc.getDisplay())
 
 class DisplayPanel extends JPanel {
     public DisplayPanel() {
