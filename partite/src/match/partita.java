@@ -2,22 +2,30 @@ package match;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.ArrayList;
 
 public abstract class Partita {
     public String n_casa, n_osp;
-    public int punti_C, punti_O;
+    public int tempo,punti_C, punti_O;
     private BufferedReader bufferedReader;
     private FileReader fileReader;
     public tipi event;
-
+    public ArrayList<String> commenti;
 
     public Partita(){
         this.n_casa = n_casa;
         this.n_osp = n_osp;
         this.punti_C = 0;
         this.punti_O = 0;
+        this.tempo=0;
+        this.commenti=new ArrayList<String>();
 
     }
+
+    public void setTempo(){
+        tempo++;
+    }
+
 
     public tipi getEvent() {
         return event;

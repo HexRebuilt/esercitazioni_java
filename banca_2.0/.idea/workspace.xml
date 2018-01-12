@@ -51,8 +51,8 @@
       <file leaf-file-name="Banca.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Banca.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="752">
+              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#generateIban#0;class#Banca#0" expanded="false" />
@@ -405,12 +405,12 @@
       <workItem from="1515617397794" duration="3211000" />
       <workItem from="1515778586543" duration="161000" />
       <workItem from="1515778840825" duration="160000" />
-      <workItem from="1515787362299" duration="458000" />
+      <workItem from="1515787362299" duration="1235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27060000" />
+    <option name="totallyTimeSpent" value="27837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="-8" width="1936" height="1056" extended-state="6" />
@@ -848,8 +848,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Banca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="65" column="30" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="752">
+          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#generateIban#0;class#Banca#0" expanded="false" />

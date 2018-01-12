@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="295">
+              <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,17 +24,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Partita.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Partita.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/match/Partita.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="510">
+              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#908#909#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
                 <element signature="method#addPunti#0;class#Partita#0" expanded="false" />
               </folding>
             </state>
@@ -64,8 +66,8 @@
       <file leaf-file-name="Pallavvolo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/match/Pallavvolo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="289">
+              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -91,10 +93,10 @@
         <option value="$PROJECT_DIR$/src/match/tipi.java" />
         <option value="$PROJECT_DIR$/src/eccezioni/empty.java" />
         <option value="$PROJECT_DIR$/src/match/partita.java" />
-        <option value="$PROJECT_DIR$/src/test.java" />
-        <option value="$PROJECT_DIR$/src/match/Partita.java" />
         <option value="$PROJECT_DIR$/src/match/Calcio.java" />
         <option value="$PROJECT_DIR$/src/match/Pallavvolo.java" />
+        <option value="$PROJECT_DIR$/src/match/Partita.java" />
+        <option value="$PROJECT_DIR$/src/test.java" />
       </list>
     </option>
   </component>
@@ -289,12 +291,12 @@
       <option name="presentableId" value="Default" />
       <updated>1515779557429</updated>
       <workItem from="1515779561151" duration="2926000" />
-      <workItem from="1515785271349" duration="2546000" />
+      <workItem from="1515785271349" duration="4028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5472000" />
+    <option name="totallyTimeSpent" value="6954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -358,10 +360,12 @@
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
             <element signature="method#addPunti#0;class#Partita#0" expanded="false" />
           </folding>
         </state>
@@ -419,6 +423,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/match/Pallavvolo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/match/Calcio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -427,35 +439,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/match/Pallavvolo.java">
+    <entry file="file://$PROJECT_DIR$/src/match/Partita.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="510">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="method#addPunti#0;class#Partita#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="295">
+          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/match/Partita.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="method#addPunti#0;class#Partita#0" expanded="false" />
           </folding>
         </state>
       </provider>
