@@ -1,15 +1,13 @@
 package match;
 
-import java.io.BufferedReader;
-
-public class Pallavvolo extends partita {
+public class Pallavvolo extends Partita {
 
     public int n_set, set_C, set_O, tout_C, tout_O;
 
 
-    public Pallavvolo(String file) {
-        super(file);
-        this.evento = evento;
+    public Pallavvolo() {
+        super();
+        this.event =tipi.PALLAVVOLO;
         this.n_casa = "A";
         this.n_osp = "B";
         this.n_set = 0;

@@ -1,7 +1,8 @@
 package match;
 
-public class Calcio extends partita {
-    public Calcio(String file) {
-        super(file);
+public class Calcio extends Partita {
+    public Calcio() {
+        super();
+        this.event =tipi.CALCIO;
     }
 }
