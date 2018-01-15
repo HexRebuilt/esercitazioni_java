@@ -8,30 +8,24 @@ import java.io.*;
 
 public class test {
     public static void main(String[] args) throws IOException {
-        OpenFile openfile=new OpenFile();
-        String nome_file=openfile.tastiera();
+        OpenFile openfile = new OpenFile();
+        String nome_file = openfile.tastiera();
 
-        nome_file=nome_file.toLowerCase();
-        Partita game=openfile.apriFile(nome_file);
+        nome_file = nome_file.toLowerCase();
+        Partita game = openfile.apriFile(nome_file);
 
-        game.commenti=openfile.leggi();
+        game.commenti = openfile.leggi();
         game.getCommentCode();
 
         //todo dovrei iniziare a far l'interfaccia
+        game.creaInterfaccia(game);
 
-        //game.creaInterfaccia(game);
         //dato che non ho interfaccia almeno inzio ad elaborare i dati
+       /*
         for(int i = 0; i<game.commenti.size();i++){
             game.scrollEvent();
             System.out.println(game.toString());
-        }
-
-
-
-
-
-
-
+        }*/
 
 
     }

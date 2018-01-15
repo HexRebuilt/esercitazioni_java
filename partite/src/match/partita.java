@@ -91,4 +91,8 @@ public abstract class Partita {
     public String toString() {
         return ("PT casa: "+getPunti_C()+"\tPt ospiti: "+getPunti_O()+"\ttempo finale: "+getTempo()+"\tin data: "+getDateEvent());
     }
+
+    public abstract int getSet_O();
+
+    public abstract int getSet_C();
 }

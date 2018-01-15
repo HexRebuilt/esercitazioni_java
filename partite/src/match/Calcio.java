@@ -61,4 +61,14 @@ public class Calcio extends Partita {
 
     }
 
+    @Override
+    public int getSet_O() {
+        return 0;
+    }
+
+    @Override
+    public int getSet_C() {
+        return 0;
+    }
+
 }

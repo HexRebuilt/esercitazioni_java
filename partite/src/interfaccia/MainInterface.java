@@ -18,19 +18,20 @@ public class MainInterface extends JFrame{
         setLocation(size.width/4,size.height/4);
 
         JPanel jp=new JPanel(); //aggiungo a lui tutti i pezzi dentro al frame
-        jp.setLayout(new BorderLayout());
+        jp.setLayout(new GridLayout(2,1));
 
-        Tabellone tabellone=new Tabellone("Casa","Ospiti",game.getDateEvent());
+        Tabellone tabellone=new Tabellone(game.punti_C,game.punti_O,game.getSet_C(),game.getSet_O(),game.getTempo(),game.getDateEvent());
         jp.add(tabellone);
 
-
         //aggiungo i commenti
-        Commenti commenti=new Commenti();
+        int now= game.eventoCorrente;
+        Commenti commenti=new Commenti(game.commenti.get(now)[2]);
         jp.add(commenti);
 
         //alla fine aggiungo tutto al frame
         Container container=getContentPane();
         container.add(jp);
+        setVisible(true);
 
     }
 
