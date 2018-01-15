@@ -20,7 +20,7 @@ public class MainInterface extends JFrame{
         JPanel jp=new JPanel(); //aggiungo a lui tutti i pezzi dentro al frame
         jp.setLayout(new BorderLayout());
 
-        Tabellone tabellone=new Tabellone("Casa","Ospiti",game.getDateEvent(0));
+        Tabellone tabellone=new Tabellone("Casa","Ospiti",game.getDateEvent());
         jp.add(tabellone);
 
 

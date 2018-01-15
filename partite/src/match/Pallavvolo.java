@@ -31,12 +31,22 @@ public class Pallavvolo extends Partita {
         switch (cod){
             case 0:
                 //todo inizio partita
+                setTempo();
                 break;
             case 1:
                 setTempo();
                 break;
             case 2:
-                //todo fine set corrente
+                //todo fine set corrente assegno i pt ai set
+                if (getPunti_C()==getPunti_O()) {
+                    break;
+                }
+                if (getPunti_C()>getPunti_O()){
+                    setSet_C();
+                }
+                else {
+                    setSet_O();
+                }
                 break;
             case 3:
                 addPuntiC();
@@ -57,14 +67,16 @@ public class Pallavvolo extends Partita {
                 //todo endgame
                 break;
         }
+        //ora manggio il resto da updatare nella interfaccia.
 
     }
+
 
     public int getSet_C() {
         return set_C;
     }
 
-    public void setSet_C() {
+    protected void setSet_C() {
         this.set_C = set_C++;
     }
 
@@ -72,7 +84,7 @@ public class Pallavvolo extends Partita {
         return set_O;
     }
 
-    public void setSet_O() {
+    protected void setSet_O() {
         this.set_O = set_O++;
     }
 
@@ -80,7 +92,7 @@ public class Pallavvolo extends Partita {
         return tout_C;
     }
 
-    public void setTout_C() {
+    protected void setTout_C() {
         this.tout_C = tout_C++;
     }
 
@@ -88,9 +100,12 @@ public class Pallavvolo extends Partita {
         return tout_O;
     }
 
-    public void setTout_O() {
+    protected void setTout_O() {
         this.tout_O = tout_O++;
     }
 
-
+    @Override
+    public String toString() {
+        return (super.toString()+("\tTime out casa:"+getTout_C()+"\tTime out ospiti: "+getTout_O()+"\tSet vinti dalla casa: "+getSet_C()+"\tSet vinti dalgi ospiti: "+getSet_O()));
+    }
 }

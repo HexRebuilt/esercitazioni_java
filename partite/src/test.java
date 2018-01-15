@@ -19,10 +19,11 @@ public class test {
 
         //todo dovrei iniziare a far l'interfaccia
 
-        game.creaInterfaccia(game);
+        //game.creaInterfaccia(game);
+        //dato che non ho interfaccia almeno inzio ad elaborare i dati
         for(int i = 0; i<game.commenti.size();i++){
             game.scrollEvent();
-
+            System.out.println(game.toString());
         }
 
 

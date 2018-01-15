@@ -37,6 +37,7 @@ public class Calcio extends Partita {
         switch (cod){
             case 0:
                 //todo trigghero lo start match
+                setTempo();
                 break;
             case 1:
                 //todo setto intervallo nella interfaccia
@@ -55,6 +56,7 @@ public class Calcio extends Partita {
                 break;
             case 99:
                 //todo fine partita in out
+                //wite everything in out
         }
 
     }

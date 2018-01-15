@@ -52,8 +52,8 @@ public abstract class Partita {
 
     }
 
-    public String getDateEvent(int i){
-        return commenti.get(i)[3];
+    public String getDateEvent(){
+        return commenti.get(eventoCorrente)[2];
     }
 
     public void creaInterfaccia(Partita game) {
@@ -69,6 +69,10 @@ public abstract class Partita {
         eventoCorrente++;
     }
 
+    public int getTempo() {
+        return tempo;
+    }
+
     public int getPunti_O() {
         return punti_O;
     }
@@ -82,4 +86,9 @@ public abstract class Partita {
     }
 
     protected abstract void analizzaCod(int cod);
+
+
+    public String toString() {
+        return ("PT casa: "+getPunti_C()+"\tPt ospiti: "+getPunti_O()+"\ttempo finale: "+getTempo()+"\tin data: "+getDateEvent());
+    }
 }
