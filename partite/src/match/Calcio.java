@@ -24,7 +24,7 @@ public class Calcio extends Partita {
     }
 
 
-    public void analizzaCod(int cod){
+    public void analizzaCod(int cod,int num_azione){
         /*
         C-00 Inizio partita
         C-01 Fine primo tempo

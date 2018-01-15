@@ -1,5 +1,8 @@
 package match;
 
+import interfaccia.MainInterface;
+
+import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -29,10 +32,15 @@ public abstract class Partita {
         tempo++;
     }
 
-    public Tipi getEvent() {
-        return event;
+    public String getEvent() {
+        switch (event.ordinal()){
+            case 0:
+                return "Partita di calcio";
+            case 1:
+                return "Partita di volleyball";
+        }
+        return null;
     }
-
 
     public int getPunti_C() {
         return punti_C;
@@ -69,4 +77,10 @@ public abstract class Partita {
         return commenti.get(i)[3];
     }
 
+    public void creaInterfaccia() {
+        MainInterface interfaccia=new MainInterface(event.toString());
+        interfaccia.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        interfaccia.setVisible(true);
+
+    }
 }
