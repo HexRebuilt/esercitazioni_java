@@ -9,7 +9,7 @@ public abstract class Partita {
     public int tempo,punti_C, punti_O;
     private BufferedReader bufferedReader;
     private FileReader fileReader;
-    public tipi event;
+    public Tipi event;
     public ArrayList<String> commenti;
 
     public Partita(){
@@ -27,7 +27,7 @@ public abstract class Partita {
     }
 
 
-    public tipi getEvent() {
+    public Tipi getEvent() {
         return event;
     }
     public String getN_casa() {

@@ -7,7 +7,7 @@ public class Pallavvolo extends Partita {
 
     public Pallavvolo() {
         super();
-        this.event =tipi.PALLAVVOLO;
+        this.event = Tipi.PALLAVVOLO;
         this.n_casa = "A";
         this.n_osp = "B";
         this.set_C = 0;

@@ -1,5 +1,5 @@
 package match;
 
-public enum  tipi {
+public enum Tipi {
     CALCIO,PALLAVVOLO;
 }

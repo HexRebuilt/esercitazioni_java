@@ -1,13 +1,8 @@
-import eccezioni.empty;
 import match.Calcio;
 import match.Pallavvolo;
 import match.Partita;
-import match.tipi;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class test {
     public static void main(String[] args) throws IOException {
@@ -26,8 +21,9 @@ public class test {
 
         //TODO sistemare apertura file
 
-        FileInputStream file=new FileInputStream(nome_file);
+        FileReader file=new FileReader(nome_file);
         BufferedReader lettore = new BufferedReader(file);
+
         if (nome_file.equals("calcio.txt")){
             game=new Calcio();
         }
@@ -44,9 +40,9 @@ public class test {
                 break;
         }
 
+
+
+
         lettore.close();
-
-
-
     }
 }
