@@ -11,6 +11,10 @@ public class test {
 
         nome_file=nome_file.toLowerCase();
         Partita game=openfile.apriFile(nome_file);
+        game.commenti=openfile.leggi();
+
+        game.getCommentCode();
+
 
 
 

@@ -53,9 +53,14 @@ public class OpenFile {
 
     public ArrayList leggi(){
         String line=null;
-        while((line=lettore.readLine())!=null){
-            String[] elemento=line.split("\t");
-            riga.add(elemento);
+        try {
+            while ((line = lettore.readLine()) != null) {
+                String[] elemento = line.split("\t");
+                riga.add(elemento);
+            }
+        }
+        catch (IOException e){
+            e.printStackTrace();
         }
 
 
