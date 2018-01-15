@@ -15,6 +15,50 @@ public class Pallavvolo extends Partita {
         this.tout_C = 0;
         this.tout_O = 0;
     }
+
+    public void analizzoCod(int cod){
+        /*V-00 Inizio partita
+        V-01 Inizio nuovo set
+        V-02 Fine set corrente
+        V-03 Punto per la squadra di casa
+        V-04 Punto per la squadra ospite
+        V-05 Time-out per la squadra di casa
+        V-06 Time-out per la squadra ospite
+        V-98 Generico commento
+        V-99 Fine partita
+                */
+        switch (cod){
+            case 0:
+                //todo inizio partita
+                break;
+            case 1:
+                setTempo();
+                break;
+            case 2:
+                //todo fine set corrente
+                break;
+            case 3:
+                addPuntiC();
+                break;
+            case 4:
+                addPuntiO();
+                break;
+            case 5:
+                setTout_C();
+                break;
+            case 6:
+                setTout_O();
+                break;
+            case 98:
+                //todo passo commento generico
+                break;
+            case 99:
+                //todo endgame
+                break;
+        }
+
+    }
+
     public int getSet_C() {
         return set_C;
     }
@@ -46,4 +90,6 @@ public class Pallavvolo extends Partita {
     public void setTout_O() {
         this.tout_O = tout_O++;
     }
+
+
 }

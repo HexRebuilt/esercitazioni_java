@@ -56,9 +56,17 @@ public abstract class Partita {
             String[] codice= linea[0].split("-");
             int cod=parseInt(codice[1]);
             codici.add(cod);
-            System.out.print(codici.get(i) +"\t");
+            //System.out.print(codici.get(i) +"\t");
         }
 
+    }
+
+    public String getTimeEvent(int i){
+        return commenti.get(i)[4];
+    }
+
+    public String getDateEvent(int i){
+        return commenti.get(i)[3];
     }
 
 }
