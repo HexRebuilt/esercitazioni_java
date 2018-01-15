@@ -31,16 +31,6 @@ public class test {
             game=new Pallavvolo();
         }
 
-        switch (game.getEvent().ordinal()){
-            case 0://calcio
-
-                break;
-            case 1://volley
-
-                break;
-        }
-
-
 
 
         lettore.close();
