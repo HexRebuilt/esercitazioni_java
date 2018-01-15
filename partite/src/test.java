@@ -19,7 +19,11 @@ public class test {
 
         //todo dovrei iniziare a far l'interfaccia
 
-        game.creaInterfaccia();
+        game.creaInterfaccia(game);
+        for(int i = 0; i<game.commenti.size();i++){
+            game.scrollEvent();
+
+        }
 
 
 

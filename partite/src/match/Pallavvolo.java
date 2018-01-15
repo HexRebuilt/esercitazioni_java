@@ -16,7 +16,8 @@ public class Pallavvolo extends Partita {
         this.tout_O = 0;
     }
 
-    public void analizzoCod(int cod){
+    @Override
+    protected void analizzaCod(int cod){
         /*V-00 Inizio partita
         V-01 Inizio nuovo set
         V-02 Fine set corrente

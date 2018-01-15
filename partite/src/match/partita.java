@@ -17,6 +17,7 @@ public abstract class Partita {
     public Tipi event;
     public ArrayList<String[]> commenti;
     public ArrayList<Integer> codici;
+    public int eventoCorrente;
 
     public Partita(){
         this.n_casa = n_casa;
@@ -26,35 +27,18 @@ public abstract class Partita {
         this.tempo=0;
         this.commenti=null;
         this.codici=new ArrayList<>();
+        this.eventoCorrente=0;
     }
 
-    public void setTempo(){
+    protected void setTempo(){
         tempo++;
     }
 
-    public String getEvent() {
-        switch (event.ordinal()){
-            case 0:
-                return "Partita di calcio";
-            case 1:
-                return "Partita di volleyball";
-        }
-        return null;
-    }
-
-    public int getPunti_C() {
-        return punti_C;
-    }
-
-    public int getPunti_O() {
-        return punti_O;
-    }
-
-    public void addPuntiC(){
+    protected void addPuntiC(){
         punti_C++;
     }
 
-    public void addPuntiO(){
+    protected void addPuntiO(){
         punti_O++;
     }
 
@@ -64,23 +48,38 @@ public abstract class Partita {
             String[] codice= linea[0].split("-");
             int cod=parseInt(codice[1]);
             codici.add(cod);
-            //System.out.print(codici.get(i) +"\t");
         }
 
-    }
-
-    public String getTimeEvent(int i){
-        return commenti.get(i)[4];
     }
 
     public String getDateEvent(int i){
         return commenti.get(i)[3];
     }
 
-    public void creaInterfaccia() {
-        MainInterface interfaccia=new MainInterface(event.toString());
+    public void creaInterfaccia(Partita game) {
+        MainInterface interfaccia=new MainInterface(event.toString(),game);
         interfaccia.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         interfaccia.setVisible(true);
 
     }
+
+    public void scrollEvent(){
+        int i=codici.get(eventoCorrente);
+        analizzaCod(i);
+        eventoCorrente++;
+    }
+
+    public int getPunti_O() {
+        return punti_O;
+    }
+
+    public int getPunti_C() {
+        return punti_C;
+    }
+
+    public String getTimeEvent(int i){
+        return commenti.get(i)[4];
+    }
+
+    protected abstract void analizzaCod(int cod);
 }

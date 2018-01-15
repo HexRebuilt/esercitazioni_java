@@ -23,8 +23,8 @@ public class Calcio extends Partita {
         this.n_osp = n_osp;
     }
 
-
-    public void analizzaCod(int cod,int num_azione){
+    @Override
+    protected void analizzaCod(int cod){
         /*
         C-00 Inizio partita
         C-01 Fine primo tempo
