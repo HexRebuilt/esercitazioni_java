@@ -51,23 +51,11 @@ public abstract class Partita {
 
     }
 
-    public String getDateEvent(){
-        return commenti.get(eventoCorrente)[2];
-    }
-
-
-    /*
-    public void creaInterfaccia(Partita game) {
-        MainInterface interfaccia=new MainInterface(event.toString(),game);
-        interfaccia.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        interfaccia.setVisible(true);
-
-    }
-    */
-    public void scrollEvent(){
+    public int [] scrollEvent(){
         int i=codici.get(eventoCorrente);
         analizzaCod(i);
         eventoCorrente++;
+        return getDatiInterfaccia();
     }
 
     public int getTempo() {
@@ -82,9 +70,15 @@ public abstract class Partita {
         return punti_C;
     }
 
-    public String getTimeEvent(int i){
-        return commenti.get(i)[3];
+    public String getTimeEvent(){
+        return commenti.get(eventoCorrente)[2];
     }
+
+    public String commentoCorrente() {
+        return commenti.get(eventoCorrente)[1];
+    }
+
+    protected abstract void analizzaCod(int cod);
 
     public String getEvento() {
         if (event== Tipi.CALCIO){
@@ -106,11 +100,6 @@ public abstract class Partita {
         return datiInterfaccia;
     }
 
-    public String commentoCorrente() {
-        return commenti.get(eventoCorrente)[2];
-    }
-
-    protected abstract void analizzaCod(int cod);
 
     public abstract String toString();
 

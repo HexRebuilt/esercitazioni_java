@@ -24,9 +24,8 @@ public class MainInterface extends JFrame{
         JPanel jp=new JPanel(); //aggiungo a lui tutti i pezzi dentro al frame
         jp.setLayout(new GridLayout(2,1));
 
-        Tabellone tabellone=new Tabellone(game.getDatiInterfaccia(),game.commentoCorrente(),game.getDateEvent());
+        Tabellone tabellone=new Tabellone(game.getDatiInterfaccia(),game.getTimeEvent(),game.commentoCorrente());
         jp.add(tabellone);
-
 
         //alla fine aggiungo tutto al frame
         Container container=getContentPane();

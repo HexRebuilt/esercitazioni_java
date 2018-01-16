@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Tabellone extends JPanel {
-    public Tabellone( int[] datiInterfaccia, String minuti){
+    public Tabellone( int[] datiInterfaccia, String minuti, String commento){
         setLayout(new GridLayout(4,3));
 
         //todo layout team A, tempo gioco, Team B \n pt A, data match, pt B, time out A, primo/secondo tempo, time out B
@@ -33,7 +33,7 @@ public class Tabellone extends JPanel {
         add(setVintiC);add(update);add(setVintiO);
 
         JLabel timeOutC=new JLabel("Timeout: "+datiInterfaccia[5]);
-        JLabel commenti=new JLabel("DEVO AGGIUNGERE I COMMENTI");
+        JLabel commenti=new JLabel(commento);
         JLabel timeOutO=new JLabel("Timeout: "+datiInterfaccia[6]);
     }
 

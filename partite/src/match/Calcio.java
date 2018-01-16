@@ -7,22 +7,6 @@ public class Calcio extends Partita {
     }
 
 
-    public String getN_casa() {
-        return n_casa;
-    }
-
-    public void setN_casa(String n_casa) {
-        this.n_casa = n_casa;
-    }
-
-    public String getN_osp() {
-        return n_osp;
-    }
-
-    public void setN_osp(String n_osp) {
-        this.n_osp = n_osp;
-    }
-
     @Override
     protected void analizzaCod(int cod){
         /*
@@ -61,7 +45,6 @@ public class Calcio extends Partita {
 
     }
 
-
     @Override
     public String toString() {
         return null;
@@ -75,7 +58,6 @@ public class Calcio extends Partita {
     public int getTout_O() {
         return 0;
     }
-
 
     @Override
     public int getSet_O() {
