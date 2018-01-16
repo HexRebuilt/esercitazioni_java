@@ -15,7 +15,7 @@ public abstract class Partita {
     public ArrayList<String[]> commenti;
     public ArrayList<Integer> codici;
     public int eventoCorrente;
-    protected int[] datiInterfaccia;
+    protected Risultato risultato;
 
     public Partita(){
         this.n_casa = n_casa;
@@ -26,7 +26,7 @@ public abstract class Partita {
         this.commenti=null;
         this.codici=new ArrayList<>();
         this.eventoCorrente=0;
-        this.datiInterfaccia=null;
+        this.risultato=new Risultato();
     }
 
     protected void setTempo(){
@@ -51,7 +51,7 @@ public abstract class Partita {
 
     }
 
-    public int [] scrollEvent(){
+    public Risultato scrollEvent(){
         int i=codici.get(eventoCorrente);
         analizzaCod(i);
         eventoCorrente++;
@@ -89,15 +89,15 @@ public abstract class Partita {
         }
     }
 
-    public int[] getDatiInterfaccia(){
-        datiInterfaccia[0]=getPunti_C();
-        datiInterfaccia[1]=getPunti_O();
-        datiInterfaccia[2]=getSet_C();
-        datiInterfaccia[3]=getSet_O();
-        datiInterfaccia[4]=getTempo();
-        datiInterfaccia[5]=getTout_C();
-        datiInterfaccia[6]=getTout_O();
-        return datiInterfaccia;
+    public Risultato getDatiInterfaccia(){
+        risultato.setPtc(getPunti_C());
+        risultato.setPto(getPunti_O());
+        risultato.setSetc(getSet_C());
+        risultato.setSeto(getSet_O());
+        risultato.setTempo(getTempo());
+        risultato.setToutc(getTout_C());
+        risultato.setTouto(getTout_O());
+        return risultato;
     }
 
 

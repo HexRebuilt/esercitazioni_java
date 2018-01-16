@@ -29,6 +29,7 @@ public class OpenFile {
     public Partita apriFile(String nome_file) {
         try {
             file=new FileReader(nome_file);
+            lettore=new BufferedReader(file);
         } catch (FileNotFoundException e) {
             new empty();
         }
@@ -51,7 +52,7 @@ public class OpenFile {
             }
         }
         catch (Exception e){
-            new empty();
+            e.printStackTrace();
         }
         return letta;
     }
