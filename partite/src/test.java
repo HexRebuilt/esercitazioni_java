@@ -1,9 +1,13 @@
 import interfaccia.CreaInterfaccia;
+import interfaccia.ScegliFile;
 import match.Partita;
 
 public class test {
     public static void main(String[] args) {
+
+
         OpenFile openfile = new OpenFile();
+        System.out.println("Scrivere il nome del file da aprire:");
         String nome_file = openfile.tastiera();
 
         nome_file = nome_file.toLowerCase();

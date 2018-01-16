@@ -17,16 +17,16 @@ public abstract class Partita {
     public int eventoCorrente;
     protected Risultato risultato;
 
-    public Partita(){
+    public Partita() {
         this.n_casa = n_casa;
         this.n_osp = n_osp;
         this.punti_C = 0;
         this.punti_O = 0;
-        this.tempo=0;
-        this.commenti=null;
-        this.codici=new ArrayList<>();
-        this.eventoCorrente=0;
-        this.risultato=new Risultato();
+        this.tempo = 0;
+        this.commenti = null;
+        this.codici = new ArrayList<>();
+        this.eventoCorrente = 0;
+        this.risultato = new Risultato();
     }
 
     protected void setTempo(){
@@ -51,11 +51,11 @@ public abstract class Partita {
 
     }
 
-    public Risultato scrollEvent(){
+    public void scrollEvent(){
         int i=codici.get(eventoCorrente);
         analizzaCod(i);
         eventoCorrente++;
-        return getDatiInterfaccia();
+        aggiornaRisultato();
     }
 
     public int getTempo() {
@@ -89,7 +89,7 @@ public abstract class Partita {
         }
     }
 
-    public Risultato getDatiInterfaccia(){
+    public void aggiornaRisultato(){
         risultato.setPtc(getPunti_C());
         risultato.setPto(getPunti_O());
         risultato.setSetc(getSet_C());
@@ -97,6 +97,9 @@ public abstract class Partita {
         risultato.setTempo(getTempo());
         risultato.setToutc(getTout_C());
         risultato.setTouto(getTout_O());
+    }
+
+    public Risultato getRisultato() {
         return risultato;
     }
 
