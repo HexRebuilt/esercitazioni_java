@@ -51,42 +51,41 @@ public class MainInterface extends JFrame{
             add(time);
             add(ospiti);
 
-            JLabel pointsC = new JLabel("Punti:" + game.getRisultato().getRisultato(0));
-            JLabel tempo = new JLabel("Tempo/Set:" + game.getRisultato().getRisultato(1));
-            JLabel pointsO = new JLabel("Punti:" + game.getRisultato().getRisultato(2));
+            JLabel pointsC = new JLabel("Punti :" );
+            JLabel tempo = new JLabel("Tempo/Set :" );
+            JLabel pointsO = new JLabel("Punti  :");
             add(pointsC);
             add(tempo);
             add(pointsO);
 
             JLabel commenti = new JLabel(game.commentoCorrente());
-            JLabel setVintiC = new JLabel("Set Vinti:" + game.getRisultato().getRisultato(3));
-            JLabel setVintiO = new JLabel("Set Vinti:" + game.getRisultato().getRisultato(4));
+            JLabel setVintiC = new JLabel("Set Vinti  :");
+            JLabel setVintiO = new JLabel("Set Vinti  :");
             add(setVintiC);
             add(commenti);
             add(setVintiO);
 
-            JLabel timeOutC = new JLabel("Timeout: " + game.getRisultato().getRisultato(5));
+            JLabel timeOutC = new JLabel("Timeout  : ");
             JButton update = new JButton("Prossima azione");
-            JLabel timeOutO = new JLabel("Timeout: " + game.getRisultato().getRisultato(6));
+            JLabel timeOutO = new JLabel("Timeout  : ");
             add(timeOutC);
             add(update);
             add(timeOutO);
             update.addActionListener(aggiorna ->{
                 game.scrollEvent();
-                
+
                 time.setText(game.getTimeEvent());
 
-                pointsC.setText("Punti:" + game.getRisultato().getRisultato(0));
-                tempo.setText("Tempo/Set:" + game.getRisultato().getRisultato(1));
-                pointsO.setText("Punti:" + game.getRisultato().getRisultato(2));
+                pointsC.setText("Punti  :" + game.getRisultato().getPtc());
+                tempo.setText("Tempo/Set  :" + game.getRisultato().getTempo());
+                pointsO.setText("Punti  :" + game.getRisultato().getPto());
 
+                setVintiC.setText("Set Vinti  :" + game.getRisultato().getSetc());
+                setVintiO.setText("Set Vinti  :" + game.getRisultato().getSeto());
+
+                timeOutC.setText("Timeout  : " + game.getRisultato().getToutc());
+                timeOutO.setText("Timeout  : " + game.getRisultato().getTouto());
                 commenti.setText(game.commentoCorrente());
-                setVintiC.setText("Set Vinti:" + game.getRisultato().getRisultato(3));
-                setVintiO.setText("Set Vinti:" + game.getRisultato().getRisultato(4));
-
-                timeOutC.setText("Timeout: " + game.getRisultato().getRisultato(5));
-                update.setText("Prossima azione");
-                timeOutO.setText("Timeout: " + game.getRisultato().getRisultato(6));
             });
         }
     }

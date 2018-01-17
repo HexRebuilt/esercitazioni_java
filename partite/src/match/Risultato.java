@@ -22,28 +22,33 @@ public class Risultato {
         this.touto = 0;
     }
 
-
-    public int getRisultato(int i) {
-        switch (i){
-            case 0:
-                return ptc;
-            case 1:
-                return pto;
-            case 2:
-                return setc;
-            case 3:
-                return seto;
-            case 4:
-                return tempo;
-            case 5:
-                return toutc;
-            case 6:
-                return touto;
-            default:
-                return 0;
-        }
+    public int getPtc() {
+        return ptc;
     }
 
+    public int getPto() {
+        return pto;
+    }
+
+    public int getSetc() {
+        return setc;
+    }
+
+    public int getSeto() {
+        return seto;
+    }
+
+    public int getTempo() {
+        return tempo;
+    }
+
+    public int getToutc() {
+        return toutc;
+    }
+
+    public int getTouto() {
+        return touto;
+    }
 
     public void setPtc(int ptc) {
         this.ptc = ptc;

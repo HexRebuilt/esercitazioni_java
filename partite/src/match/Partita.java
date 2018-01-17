@@ -55,14 +55,9 @@ public abstract class Partita {
 
     public void scrollEvent(){
         int i=codici.get(eventoCorrente);
-        if (i<codici.size()){
             analizzaCod(i);
             eventoCorrente++;
             aggiornaRisultato();
-        }
-        else {
-            finepartita=true;
-        }
     }
 
     public int getTempo() {

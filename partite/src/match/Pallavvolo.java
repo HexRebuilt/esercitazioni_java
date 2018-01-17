@@ -31,22 +31,14 @@ public class Pallavvolo extends Partita {
         switch (cod){
             case 0:
                 //todo inizio partita
-                setTempo();
+
                 break;
             case 1:
                 setTempo();
                 break;
             case 2:
                 //todo fine set corrente assegno i pt ai set
-                if (getPunti_C()==getPunti_O()) {
-                    break;
-                }
-                if (getPunti_C()>getPunti_O()){
-                    setSet_C();
-                }
-                else {
-                    setSet_O();
-                }
+                fineset();
                 break;
             case 3:
                 addPuntiC();
@@ -69,13 +61,28 @@ public class Pallavvolo extends Partita {
         }
     }
 
+    private void fineset() {
+        if (punti_C>punti_O){
+            setSet_C();
+        }
+        else if(punti_O>punti_C){
+            setSet_O();
+        }
+        setPunti();
+    }
+
+    private void setPunti() {
+        punti_C=0;
+        punti_O=0;
+    }
+
 
     public int getSet_C() {
         return set_C;
     }
 
     protected void setSet_C() {
-        this.set_C = set_C++;
+        set_C++;
     }
 
     public int getSet_O() {
@@ -83,7 +90,7 @@ public class Pallavvolo extends Partita {
     }
 
     protected void setSet_O() {
-        this.set_O = set_O++;
+        set_O++;
     }
 
     public int getTout_C() {
@@ -91,7 +98,7 @@ public class Pallavvolo extends Partita {
     }
 
     protected void setTout_C() {
-        this.tout_C = tout_C++;
+        tout_C++;
     }
 
     public int getTout_O() {
@@ -99,7 +106,7 @@ public class Pallavvolo extends Partita {
     }
 
     protected void setTout_O() {
-        this.tout_O = tout_O++;
+        tout_O++;
     }
 
     @Override
