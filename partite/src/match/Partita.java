@@ -16,6 +16,7 @@ public abstract class Partita {
     public ArrayList<Integer> codici;
     public int eventoCorrente;
     protected Risultato risultato;
+    private boolean finepartita;
 
     public Partita() {
         this.n_casa = n_casa;
@@ -27,6 +28,7 @@ public abstract class Partita {
         this.codici = new ArrayList<>();
         this.eventoCorrente = 0;
         this.risultato = new Risultato();
+        this.finepartita=false;
     }
 
     protected void setTempo(){
@@ -53,9 +55,14 @@ public abstract class Partita {
 
     public void scrollEvent(){
         int i=codici.get(eventoCorrente);
-        analizzaCod(i);
-        eventoCorrente++;
-        aggiornaRisultato();
+        if (i<codici.size()){
+            analizzaCod(i);
+            eventoCorrente++;
+            aggiornaRisultato();
+        }
+        else {
+            finepartita=true;
+        }
     }
 
     public int getTempo() {
@@ -64,6 +71,15 @@ public abstract class Partita {
 
     public int getPunti_O() {
         return punti_O;
+    }
+
+    public int getFinepartita() {
+        if(finepartita){
+            return 1;
+        }
+        else {
+            return 0;
+        }
     }
 
     public int getPunti_C() {

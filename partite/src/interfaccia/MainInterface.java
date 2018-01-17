@@ -28,59 +28,66 @@ public class MainInterface extends JFrame{
         //JPanel jp=new JPanel(); //aggiungo a lui tutti i pezzi dentro al frame
         jp.setLayout(new BorderLayout());
 
-        Tabellone tabellone=new Tabellone(game.getRisultato(),game.getTimeEvent(),game.commentoCorrente());
+        Tabellone tabellone=new Tabellone(game);
         jp.add(tabellone);
 
         //alla fine aggiungo tutto al frame
         Container container=getContentPane();
         container.add(jp);
+        setDefaultCloseOperation(game.getFinepartita());
         setVisible(true);
 
     }
 
     public class Tabellone extends JPanel {
-        public Tabellone(Risultato status, String minuti, String commento) {
+        public Tabellone(Partita game) {
             setLayout(new GridLayout(4, 3));
 
             //todo layout team A, tempo gioco, Team B \n pt A, data match, pt B, time out A, primo/secondo tempo, time out B
             JLabel casa = new JLabel("Casa");
-            JLabel time = new JLabel(minuti);
+            JLabel time = new JLabel(game.getTimeEvent());
             JLabel ospiti = new JLabel("Ospiti");
             add(casa);
             add(time);
             add(ospiti);
 
-            JLabel pointsC = new JLabel("Punti:" + status.getRisultato(0));
-            JLabel tempo = new JLabel("Tempo/Set:" + status.getRisultato(1));
-            JLabel pointsO = new JLabel("Punti:" + status.getRisultato(2));
+            JLabel pointsC = new JLabel("Punti:" + game.getRisultato().getRisultato(0));
+            JLabel tempo = new JLabel("Tempo/Set:" + game.getRisultato().getRisultato(1));
+            JLabel pointsO = new JLabel("Punti:" + game.getRisultato().getRisultato(2));
             add(pointsC);
             add(tempo);
             add(pointsO);
 
-            JLabel setVintiC = new JLabel("Set Vinti:" + status.getRisultato(3));
-            JLabel commenti = new JLabel(commento);
-            JLabel setVintiO = new JLabel("Set Vinti:" + status.getRisultato(4));
+            JLabel commenti = new JLabel(game.commentoCorrente());
+            JLabel setVintiC = new JLabel("Set Vinti:" + game.getRisultato().getRisultato(3));
+            JLabel setVintiO = new JLabel("Set Vinti:" + game.getRisultato().getRisultato(4));
             add(setVintiC);
             add(commenti);
             add(setVintiO);
 
-            JLabel timeOutC = new JLabel("Timeout: " + status.getRisultato(5));
+            JLabel timeOutC = new JLabel("Timeout: " + game.getRisultato().getRisultato(5));
             JButton update = new JButton("Prossima azione");
-            JLabel timeOutO = new JLabel("Timeout: " + status.getRisultato(6));
+            JLabel timeOutO = new JLabel("Timeout: " + game.getRisultato().getRisultato(6));
             add(timeOutC);
             add(update);
             add(timeOutO);
-            ActionListener aggiorna=new updateButton();
-            update.addActionListener(aggiorna);
-        }
-    }
+            update.addActionListener(aggiorna ->{
+                game.scrollEvent();
+                
+                time.setText(game.getTimeEvent());
 
-    private class updateButton implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            game.scrollEvent();
-            jp.repaint();
+                pointsC.setText("Punti:" + game.getRisultato().getRisultato(0));
+                tempo.setText("Tempo/Set:" + game.getRisultato().getRisultato(1));
+                pointsO.setText("Punti:" + game.getRisultato().getRisultato(2));
 
+                commenti.setText(game.commentoCorrente());
+                setVintiC.setText("Set Vinti:" + game.getRisultato().getRisultato(3));
+                setVintiO.setText("Set Vinti:" + game.getRisultato().getRisultato(4));
+
+                timeOutC.setText("Timeout: " + game.getRisultato().getRisultato(5));
+                update.setText("Prossima azione");
+                timeOutO.setText("Timeout: " + game.getRisultato().getRisultato(6));
+            });
         }
     }
 }
