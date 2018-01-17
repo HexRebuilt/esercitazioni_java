@@ -57,6 +57,7 @@ public class Pallavvolo extends Partita {
                 break;
             case 99:
                 //todo endgame
+                finepartita=true;
                 break;
         }
     }

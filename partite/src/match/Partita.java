@@ -16,7 +16,7 @@ public abstract class Partita {
     public ArrayList<Integer> codici;
     public int eventoCorrente;
     protected Risultato risultato;
-    private boolean finepartita;
+    protected boolean finepartita;
 
     public Partita() {
         this.n_casa = n_casa;

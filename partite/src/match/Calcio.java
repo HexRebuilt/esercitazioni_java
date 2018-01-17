@@ -40,7 +40,7 @@ public class Calcio extends Partita {
                 break;
             case 99:
                 //todo fine partita in out
-                //wite everything in out
+                finepartita=true;
         }
 
     }
