@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public final class soldi {
+public final class Soldi {
      public ArrayList<Double> monete;
-     public soldi(){
+     public Soldi(){
          this.monete= new ArrayList<Double>();
          monete.add(0.50);
          monete.add(0.20);

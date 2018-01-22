@@ -1,3 +1,4 @@
+import distributore.*;
 import errori.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -45,7 +46,7 @@ public class OpenFile {
 
     }
 
-    public void splitFile() throws fileNullo {
+    private void splitFile() throws fileNullo {
         try{
             String letta;
             while ((letta=lettore.readLine())!=null){
@@ -57,4 +58,7 @@ public class OpenFile {
         }
     }
 
+    public ArrayList<String[]> getFileaperto() {
+        return fileaperto;
+    }
 }
