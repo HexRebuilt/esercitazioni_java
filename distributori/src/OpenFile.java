@@ -1,4 +1,6 @@
-import distributore.*;
+import distributore.Bevandiero;
+import distributore.Cibario;
+import distributore.Distributore;
 import errori.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -58,7 +60,12 @@ public class OpenFile {
         }
     }
 
-    public ArrayList<String[]> getFileaperto() {
-        return fileaperto;
+    public Distributore creaDistributore(){
+        if (nome_file=="snack.txt"){
+            return new Cibario(fileaperto);
+        }
+        else {
+            return new Bevandiero(fileaperto);
+        }
     }
 }

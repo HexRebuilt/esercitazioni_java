@@ -1,6 +1,6 @@
-package distributore;
+package distributore.Elementi;
 
-import java.util.ArrayList;
+import distributore.Elementi.Elemento;
 
 public class Snack extends Elemento {
 
