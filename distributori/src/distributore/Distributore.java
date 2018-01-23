@@ -1,7 +1,6 @@
 package distributore;
 import distributore.Elementi.Elemento;
-import errori.elementoNonTrovato;
-import errori.nessunaDigitata;
+import errori.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,6 +32,22 @@ public abstract class Distributore {
     public void printLista() {
         for (int i = 0; i < elementi.size(); i++) {
             mostraElemento(i);
+        }
+    }
+
+    public void printDisponibili(){
+        for (int i = 0; i < elementi.size(); i++) {
+            if (disponibile(i)){
+                mostraElemento(i);
+            }
+        }
+    }
+
+    public void printEsauriti(){
+        for (int i = 0; i < elementi.size(); i++) {
+            if (!disponibile(i)){
+                mostraElemento(i);
+            }
         }
     }
 
@@ -89,6 +104,7 @@ public abstract class Distributore {
         if (soldicorrenti >= elementi.get(index).costo) {
             return false;
         } else {
+            System.out.println("Credito insufficiente. Aggiungere monete");
             return true;
         }
     }
@@ -99,20 +115,45 @@ public abstract class Distributore {
         printLista();
         System.out.println("\nSelezionare il codice:");
         String selezione=keyboard();
+        try {
+            prendiElemento(selezione);
+        } catch (errori.prodottoEsaurito prodottoEsaurito) {
+            prodottoEsaurito.printStackTrace();
+        } catch (errori.elementoNonTrovato elementoNonTrovato) {
+            elementoNonTrovato.printStackTrace();
+        }
+    }
+    public void prendiElemento(String selezione) throws prodottoEsaurito, elementoNonTrovato {
         int index=-1;
         index=trovaElemento(selezione);
+        if (index==-1){
+            throw new elementoNonTrovato();
+        }
 
         if (disponibile(index)){
             while (checkCosto(index)){
                 inserisciMonete();
             }
+
             togliElemento(index);
             moneteTot=moneteTot+soldicorrenti;
             soldicorrenti=soldicorrenti-elementi.get(index).costo;
         }
+        else {
+            throw new prodottoEsaurito();
+        }
 
 
         System.out.println("Prendere l'elemento selezionato. Credito rimasto: "+soldicorrenti);
+    }
+
+
+    public void svuotamonete(){
+        moneteTot=0.0;
+    }
+
+    public void operatore(String cod){
+        refill(trovaElemento(cod));
     }
 
 }

@@ -10,6 +10,8 @@ public class test {
 
         distributore=openFile.creaDistributore();
         distributore.prendiElemento();
+        distributore.printDisponibili();
+        distributore.printEsauriti();
 
 
 

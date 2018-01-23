@@ -5,7 +5,6 @@ public abstract class Elemento {
     public String nome;
     public double costo;
     public int qta;
-    //public int grammi;
 
     public Elemento(String codice, String nome, double costo) {
         this.codice = codice;
@@ -15,7 +14,7 @@ public abstract class Elemento {
 
     @Override
     public String toString() {
-        return ( codice+"\t"+nome + '\t' + costo +"€");
+        return ( codice+"\t"+nome + '\t' + costo +"€"+"\tGiacenza: "+qta);
     }
 
 }
