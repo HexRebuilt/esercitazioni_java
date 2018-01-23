@@ -20,7 +20,6 @@ public class OpenFile {
     }
 
     public String tastiera()  {
-        System.out.println("Scrivere il nome del file da aprire");
         InputStreamReader keyboard=new InputStreamReader(System.in);
         BufferedReader bufferedReader=new BufferedReader(keyboard);
         try {
@@ -61,7 +60,7 @@ public class OpenFile {
     }
 
     public Distributore creaDistributore(){
-        if (nome_file=="snack.txt"){
+        if (nome_file.equals("snack.txt")){
             return new Cibario(fileaperto);
         }
         else {

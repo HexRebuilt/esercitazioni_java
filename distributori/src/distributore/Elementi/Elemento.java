@@ -14,7 +14,7 @@ public abstract class Elemento {
 
     @Override
     public String toString() {
-        return ( nome + '\t' + costo +"€");
+        return ( codice+"\t"+nome + '\t' + costo +"€");
     }
 
     public double getGrammi() {
