@@ -15,7 +15,6 @@ public abstract class Distributore {
     protected ArrayList<Elemento> elementi;
     private double moneteTot;
     private double soldicorrenti;
-    private Soldi monete;
 
     public Distributore(ArrayList<String[]> file) {
         this.elementi = new ArrayList<>();
@@ -23,7 +22,6 @@ public abstract class Distributore {
         creaLista();
         this.moneteTot = 0;
         this.soldicorrenti=0;
-        this.monete=new Soldi();
     }
 
     protected abstract void creaLista();
@@ -53,13 +51,22 @@ public abstract class Distributore {
 
     public void inserisciMonete() {
         System.out.println("Credito corrente: "+soldicorrenti+"\nInserisci quante monete da 50c, 20c, 10c, 5c, inserisci rispettivamente separate da uno spazio.\nSolo -1 per restituire le monete");
-        String[] splittata=keyboard().split("");
+        String[] splittata=keyboard().split(" ");
         if (splittata[0].equals("-1")){
             ritornaMonete();
+            splittata=null;
         }
-        for (int i=0;i<splittata.length;i++){
-            soldicorrenti=monete.monete[i]*parseInt(splittata[i]);
-        }
+            switch (splittata.length) {
+                case 4:
+                    soldicorrenti = soldicorrenti + 0.05 * parseInt(splittata[3]);
+                case 3:
+                    soldicorrenti = soldicorrenti + 0.10 * parseInt(splittata[2]);
+                case 2:
+                    soldicorrenti = soldicorrenti + 0.20 * parseInt(splittata[1]);
+                case 1:
+                    soldicorrenti = soldicorrenti + 0.50 * parseInt(splittata[0]);
+            }
+
         System.out.println("Credito: "+soldicorrenti);
     }
 
@@ -80,9 +87,9 @@ public abstract class Distributore {
 
     private boolean checkCosto( int index) {
         if (soldicorrenti >= elementi.get(index).costo) {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
 
@@ -90,21 +97,22 @@ public abstract class Distributore {
 
     public void prendiElemento(){
         printLista();
-        System.out.println("Selezionare il codice");
+        System.out.println("\nSelezionare il codice:");
         String selezione=keyboard();
         int index=-1;
         index=trovaElemento(selezione);
 
-        if (disponibile(index) && index>0){
+        if (disponibile(index)){
             while (checkCosto(index)){
                 inserisciMonete();
             }
             togliElemento(index);
             moneteTot=moneteTot+soldicorrenti;
+            soldicorrenti=soldicorrenti-elementi.get(index).costo;
         }
 
 
-        System.out.println("Prendere l'elemento selezionato");
+        System.out.println("Prendere l'elemento selezionato. Credito rimasto: "+soldicorrenti);
     }
 
 }

@@ -1,13 +1,11 @@
 package distributore.Elementi;
 
 public class Bevande extends Elemento {
-    private double grammi;
-    public Bevande(String codice, double grammi, String nome, double costo) {
-        super(codice, nome, costo);
-        this.grammi=grammi;
-    }
+    public int grammi;
 
-    public double getGrammi() {
-        return grammi;
+    public Bevande(String codice, int necessario, String nome, double costo) {
+        super(codice, nome, costo);
+        this.grammi = necessario;
+        this.qta = 500;
     }
 }

@@ -4,7 +4,8 @@ public abstract class Elemento {
     public String codice;
     public String nome;
     public double costo;
-    private double grammi;
+    public int qta;
+    //public int grammi;
 
     public Elemento(String codice, String nome, double costo) {
         this.codice = codice;
@@ -17,8 +18,5 @@ public abstract class Elemento {
         return ( codice+"\t"+nome + '\t' + costo +"€");
     }
 
-    public double getGrammi() {
-        return grammi;
-    }
 }
 
