@@ -10,6 +10,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="uml.png" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/uml.png">
+                <provider selected="true" editor-type-id="images">
+                  <state />
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="struttura1.txt" pinned="false" current-in-tab="false">
@@ -22,21 +39,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uml.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uml.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Openfile.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Openfile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Openfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
+            <state relative-caret-position="816">
               <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Struttura.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Struttura.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="method#keyboard#0;class#Struttura#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stanza.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rooms/Stanza.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,6 +108,8 @@
         <option value="$PROJECT_DIR$/src/errori/FileNonTrovato.java" />
         <option value="$PROJECT_DIR$/src/Openfile.java" />
         <option value="$PROJECT_DIR$/src/errori/FileVuoto.java" />
+        <option value="$PROJECT_DIR$/src/rooms/Stanza.java" />
+        <option value="$PROJECT_DIR$/src/Struttura.java" />
       </list>
     </option>
   </component>
@@ -108,12 +145,6 @@
               <item name="struttura" type="b2602c69:ProjectViewProjectNode" />
               <item name="struttura" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="struttura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="struttura" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="errori" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,12 +270,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516870184910</updated>
-      <workItem from="1516870186699" duration="1623000" />
+      <workItem from="1516870186699" duration="2467000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1623000" />
+    <option name="totallyTimeSpent" value="2467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -297,11 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uml.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/struttura1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -315,8 +341,8 @@
         <state relative-caret-position="68">
           <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding>
-            <element signature="e#94#95#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#94#95#0" expanded="false" />
+            <element signature="e#145#146#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -326,8 +352,8 @@
         <state relative-caret-position="68">
           <caret line="4" column="54" lean-forward="false" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
           <folding>
-            <element signature="e#92#93#0" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#92#93#0" expanded="false" />
+            <element signature="e#156#157#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -337,18 +363,44 @@
         <state relative-caret-position="68">
           <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
           <folding>
-            <element signature="e#81#82#0" expanded="true" />
-            <element signature="e#121#122#0" expanded="true" />
+            <element signature="e#81#82#0" expanded="false" />
+            <element signature="e#121#122#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Openfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
+        <state relative-caret-position="816">
           <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rooms/Stanza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Struttura.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="method#keyboard#0;class#Struttura#0" expanded="false" />
           </folding>
         </state>
       </provider>
