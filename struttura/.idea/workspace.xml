@@ -24,18 +24,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Struttura.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Struttura.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Struttura.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            <state relative-caret-position="510">
+              <caret line="88" column="41" lean-forward="true" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#creaStruttura#0;class#Struttura#0" expanded="false" />
                 <element signature="method#costomensile#0;class#Struttura#0" expanded="false" />
                 <element signature="method#stampaStanze#0;class#Struttura#0" expanded="false" />
                 <element signature="method#liberaStanza#0;class#Struttura#0" expanded="false" />
+                <element signature="method#assegnaStanza#0;class#Struttura#0" expanded="false" />
+                <element signature="method#modificaPersone#0;class#Struttura#0" expanded="false" />
+                <element signature="e#2550#2551#0" expanded="true" />
+                <element signature="e#2602#2603#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumeroDiPersone.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/errori/NumeroDiPersone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="65" lean-forward="false" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,51 +77,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struttura1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/struttura1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Stanza.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rooms/Stanza.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="499">
+              <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#costoTot#0;class#Stanza#0" expanded="false" />
-                <element signature="e#1174#1175#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="method#Stanza#0;class#Stanza#0" expanded="false" />
+                <element signature="method#costoMese#0;class#Stanza#0" expanded="false" />
+                <element signature="method#setLibera#0;class#Stanza#0" expanded="false" />
                 <element signature="method#newRoom#0;class#Stanza#0" expanded="false" />
+                <element signature="e#1810#1811#0" expanded="true" />
+                <element signature="e#1844#1845#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rooms/Camera.java">
+      <file leaf-file-name="Canoni.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/rooms/Canoni.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="38" column="122" lean-forward="false" selection-start-line="38" selection-start-column="122" selection-end-line="38" selection-end-column="122" />
+            <state relative-caret-position="357">
+              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
               <folding>
-                <element signature="method#costoServizi#0;class#Camera#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Studio.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rooms/Studio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="40" column="122" lean-forward="false" selection-start-line="40" selection-start-column="122" selection-end-line="40" selection-end-column="122" />
-              <folding>
-                <element signature="method#costoServizi#0;class#Studio#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,17 +118,10 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="187">
+              <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uml.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uml.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -151,14 +146,16 @@
         <option value="$PROJECT_DIR$/src/errori/FileNonTrovato.java" />
         <option value="$PROJECT_DIR$/src/Openfile.java" />
         <option value="$PROJECT_DIR$/src/errori/FileVuoto.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/Servizi.java" />
         <option value="$PROJECT_DIR$/src/servizi/Servizi.java" />
-        <option value="$PROJECT_DIR$/src/rooms/Camera.java" />
         <option value="$PROJECT_DIR$/src/rooms/Studio.java" />
-        <option value="$PROJECT_DIR$/src/rooms/Stanza.java" />
         <option value="$PROJECT_DIR$/src/errori/StanzaOccupata.java" />
+        <option value="$PROJECT_DIR$/src/errori/NumeroDiPersone.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/rooms/Camera.java" />
         <option value="$PROJECT_DIR$/src/Struttura.java" />
+        <option value="$PROJECT_DIR$/src/rooms/Stanza.java" />
+        <option value="$PROJECT_DIR$/src/rooms/Canoni.java" />
       </list>
     </option>
   </component>
@@ -205,6 +202,12 @@
               <item name="struttura" type="b2602c69:ProjectViewProjectNode" />
               <item name="struttura" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="errori" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="struttura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="struttura" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="rooms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -229,6 +232,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="rooms" />
       <recent name="errori" />
     </key>
   </component>
@@ -357,12 +361,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516870184910</updated>
       <workItem from="1516870186699" duration="2829000" />
-      <workItem from="1516891268487" duration="6728000" />
+      <workItem from="1516891268487" duration="8539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9557000" />
+    <option name="totallyTimeSpent" value="11368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -376,7 +380,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -438,6 +442,10 @@
             <element signature="method#costomensile#0;class#Struttura#0" expanded="false" />
             <element signature="method#stampaStanze#0;class#Struttura#0" expanded="false" />
             <element signature="method#liberaStanza#0;class#Struttura#0" expanded="false" />
+            <element signature="method#assegnaStanza#0;class#Struttura#0" expanded="false" />
+            <element signature="method#modificaPersone#0;class#Struttura#0" expanded="false" />
+            <element signature="e#2550#2551#0" expanded="true" />
+            <element signature="e#2602#2603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -448,10 +456,12 @@
           <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#costoTot#0;class#Stanza#0" expanded="false" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="method#Stanza#0;class#Stanza#0" expanded="false" />
+            <element signature="method#costoMese#0;class#Stanza#0" expanded="false" />
+            <element signature="method#setLibera#0;class#Stanza#0" expanded="false" />
             <element signature="method#newRoom#0;class#Stanza#0" expanded="false" />
+            <element signature="e#1810#1811#0" expanded="true" />
+            <element signature="e#1844#1845#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -523,30 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rooms/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="38" column="122" lean-forward="false" selection-start-line="38" selection-start-column="122" selection-end-line="38" selection-end-column="122" />
-          <folding>
-            <element signature="method#costoServizi#0;class#Camera#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rooms/Stanza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#costoTot#0;class#Stanza#0" expanded="false" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="method#newRoom#0;class#Stanza#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/errori/StanzaOccupata.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -562,14 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -594,16 +572,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/rooms/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="124" lean-forward="false" selection-start-line="38" selection-start-column="124" selection-end-line="38" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/errori/NumeroDiPersone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="65" lean-forward="false" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Struttura.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        <state relative-caret-position="510">
+          <caret line="88" column="41" lean-forward="true" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#creaStruttura#0;class#Struttura#0" expanded="false" />
             <element signature="method#costomensile#0;class#Struttura#0" expanded="false" />
             <element signature="method#stampaStanze#0;class#Struttura#0" expanded="false" />
             <element signature="method#liberaStanza#0;class#Struttura#0" expanded="false" />
+            <element signature="method#assegnaStanza#0;class#Struttura#0" expanded="false" />
+            <element signature="method#modificaPersone#0;class#Struttura#0" expanded="false" />
+            <element signature="e#2550#2551#0" expanded="true" />
+            <element signature="e#2602#2603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rooms/Stanza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Stanza#0;class#Stanza#0" expanded="false" />
+            <element signature="method#costoMese#0;class#Stanza#0" expanded="false" />
+            <element signature="method#setLibera#0;class#Stanza#0" expanded="false" />
+            <element signature="method#newRoom#0;class#Stanza#0" expanded="false" />
+            <element signature="e#1810#1811#0" expanded="true" />
+            <element signature="e#1844#1845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rooms/Canoni.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -13,6 +13,7 @@ public abstract class Stanza {
     protected double costoMetro,costoMese,costoFisso;
     protected boolean occupata;
     public String intestatario;
+    protected Canoni storico;
 
     public Stanza(int id, String tipo, double metratura, int persone) {
         this.id = id;
@@ -37,17 +38,13 @@ public abstract class Stanza {
         servizi.remove(service);
     }
 
-    public double costoTot(){
+    public double costoMese(){
         costoMese=costoFisso+costoMese+costoMetro*metratura+costoServizi();
         return costoMese;
     }
 
     public boolean isOccupata() {
         return occupata;
-    }
-
-    protected void setOccupata() {
-        occupata = false;
     }
 
     public void setLibera(){
@@ -58,10 +55,26 @@ public abstract class Stanza {
     public void newRoom(String intestatario,int abitanti){
                 this.abitanti=abitanti;
                 this.intestatario=intestatario;
-                setOccupata();
+                occupata=false;
+    }
+
+    public int getPersone() {
+        return persone;
     }
 
     protected abstract double costoServizi();
 
     public abstract void stampa();
+
+    public void setAbitanti(int abitanti) {
+        this.abitanti = abitanti;
+    }
+
+    public void aggiungiStorico(String data){
+        storico.aggiungiMensilità(data,costoMese);
+    }
+
+    public void visualizzaStorico(){
+        storico.getCanone()
+    }
 }

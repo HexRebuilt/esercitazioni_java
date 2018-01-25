@@ -36,7 +36,7 @@ public class Camera extends Stanza {
 
     @Override
     public void stampa() {
-        System.out.println("Stanza numero: "+id+"\tTipo: Camera\tMetratura: "+metratura+"\tRisiedenti: "+persone+"\tLibera:"+occupata);
+        System.out.println("Stanza numero: "+id+"\tTipo: Camera\tMetratura: "+metratura+"\tRisiedenti: "+persone+"\tLibera: "+occupata);
 
     }
 }

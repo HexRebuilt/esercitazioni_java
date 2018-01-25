@@ -1,3 +1,4 @@
+import errori.NumeroDiPersone;
 import errori.StanzaOccupata;
 import rooms.Camera;
 import rooms.Stanza;
@@ -38,8 +39,9 @@ public class Struttura {
         }
     }
 
-    public void costomensile(int id){
-       System.out.println("Costo mensile della stanza "+id+" e': "+stanze.get(id--).costoTot());
+    public void costomensile(int id,String data){
+       System.out.println("Costo mensile della stanza "+id+" e': "+stanze.get(id--).costoMese());
+       stanze.get(id).aggiungiStorico(data);
     }
 
     public void stampaStanze() {
@@ -61,11 +63,30 @@ public class Struttura {
     public void assegnaStanza(int id,String intestatario,int abitanti){
         id--;
         if (stanze.get(id).isOccupata()){
-            stanze.get(id).newRoom(intestatario,abitanti);
+            if (stanze.get(id).getPersone()<abitanti){
+                stanze.get(id).newRoom(intestatario,abitanti);
+            }
+            else {
+                new NumeroDiPersone();
+            }
         }
         else {
             new StanzaOccupata();
         }
+    }
+
+    public void modificaPersone(int id,int occupanti){
+        id--;
+        if(stanze.get(id).getPersone()>occupanti){
+            stanze.get(id).setAbitanti(occupanti);
+        }
+        else {
+            new NumeroDiPersone();
+        }
+    }
+
+    public void visualizzaStorico(int id){
+        stanze.get(id--).visualizzaStorico();
     }
 
 
