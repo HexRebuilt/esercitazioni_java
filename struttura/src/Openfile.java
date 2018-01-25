@@ -1,3 +1,7 @@
+import errori.FileNonTrovato;
+import errori.FileVuoto;
+import errori.NessunaDigitata;
+
 import java.io.*;
 import java.util.ArrayList;
 
@@ -19,7 +23,7 @@ public class Openfile {
         try {
             keyboard.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            new NessunaDigitata();
         }
         return letta;
     }
@@ -29,7 +33,7 @@ public class Openfile {
         try {
             file=new FileReader(percorso);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            new FileNonTrovato();
         }
         reader=new BufferedReader(file);
     }
@@ -42,7 +46,7 @@ public class Openfile {
                 unpacked.add(letta.split("\t"));
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            new FileVuoto();
         }
         return unpacked;
     }
