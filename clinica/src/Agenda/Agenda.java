@@ -1,6 +1,5 @@
 package Agenda;
-
-import Clinica.Struttura;
+import Errori.DayNotAvaible;
 
 import java.util.ArrayList;
 
@@ -9,7 +8,7 @@ import static java.lang.Integer.parseInt;
 public class Agenda {
     private final int[] giorniLavorativi= new int[]{1,2,3,4,5},oreLavorative=new int[]{8,9,10,11,12,13,14,15,16,17};
     private boolean[][] prenotazioni;
-    private ArrayList<Appuntamenti> appuntamenti;
+   private ArrayList<Appuntamenti> appuntamenti;
 
     public Agenda() {
         this.appuntamenti = new ArrayList<>();
@@ -25,12 +24,12 @@ public class Agenda {
         }
     }
 
-    public void creaAppuntamenti(String[] riga, Struttura struttura) {
+    public void creaAppuntamenti(String[] riga,String nome) throws DayNotAvaible {
         Appuntamenti temp=null;
         int[] disp;
         switch (riga.length){
                 case 3:
-                    temp = new Appuntamenti(riga[0],riga[1],struttura.getNome());
+                    temp = new Appuntamenti(riga[0],riga[1],nome);
                     disp=checkDisponibilita();
                     if (disp!=null) {
                         temp.setData(disp[0]);
@@ -41,7 +40,7 @@ public class Agenda {
                     break;
 
                 case 4:
-                    temp= new Appuntamenti(riga[0],riga[1],struttura.getNome(),parseInt(riga[3]));
+                    temp= new Appuntamenti(riga[0],riga[1],nome,parseInt(riga[3]));
                     disp=checkDisponibilita(parseInt(riga[3]));
                     if (disp!=null) {
                         temp.setData(parseInt(riga[3]));
@@ -51,10 +50,12 @@ public class Agenda {
                     }//aggiungo parti
                     break;
             }
+
+
             appuntamenti.add(temp);
         }
 
-    private int[] checkDisponibilita() {
+    private int[] checkDisponibilita() throws DayNotAvaible {
         for (int i=0;i<giorniLavorativi.length;i++){
             for (int j=0;j<oreLavorative.length;j++){
                 if (prenotazioni[i][j]){
@@ -63,10 +64,10 @@ public class Agenda {
                 }
             }
         }
-        return null;
+        throw new DayNotAvaible();
     }
 
-    private int[] checkDisponibilita(int i) {
+    private int[] checkDisponibilita(int i) throws DayNotAvaible {
         if (i>5){
             return null;
         }
@@ -83,7 +84,7 @@ public class Agenda {
                 return ret;
             }
         }
-        return null;
+        throw new DayNotAvaible();
     }
 }
 
