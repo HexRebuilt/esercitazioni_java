@@ -1,7 +1,5 @@
 package Clinica;
 
-import Agenda.Agenda;
-
 import java.util.ArrayList;
 
 public class Struttura {
@@ -27,7 +25,7 @@ public class Struttura {
         }
     }
 
-    private boolean checkPatologia(String pat) {
+    public boolean checkPatologia(String pat) {
         for(int i=0;i<patologie.size();i++){
             if (pat.equals(patologie.get(i))){
                 return true;
@@ -36,8 +34,8 @@ public class Struttura {
         return false;
     }
 
-    private void creaAppuntamento(){
-
+    public String getNome() {
+        return nome;
     }
 
 }

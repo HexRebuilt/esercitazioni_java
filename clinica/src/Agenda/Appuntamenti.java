@@ -2,30 +2,47 @@ package Agenda;
 
 public class Appuntamenti {
     private String[] paziente;
-    private String patologia;
+    private String struttura;
     private int giorno;
+    private int data, ora;
 
-    public Appuntamenti(String cognome,String nome, String patologia) {
-        this.paziente[0] = cognome;
-        this.paziente[1] = nome;
-        this.patologia = patologia;
+    public Appuntamenti(String cognome, String nome, String struttura) {
+        this.paziente = new String[]{cognome, nome};
+        this.struttura = struttura;
+        this.data=0;
+        this.ora=0;
+
     }
 
-    public Appuntamenti(String cognome,String nome, String patologia, int giorno) {
-        this.paziente[0] = cognome;
-        this.paziente[1] = nome;
+    public Appuntamenti(String cognome,String nome, String struttura, int giorno) {
+        this.paziente = new String[]{cognome,nome};
+        this.struttura = struttura;
         this.giorno = giorno;
+        this.data=0;
+        this.ora=0;
     }
 
     public String[] getPaziente() {
         return paziente;
     }
 
-    public String getPatologia() {
-        return patologia;
+    public String getStruttura() {
+        return struttura;
     }
 
     public int getGiorno() {
         return giorno;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
+
+    public void setOra(int ora) {
+        this.ora = ora;
+    }
+
+    public int getOra() {
+        return ora;
     }
 }
