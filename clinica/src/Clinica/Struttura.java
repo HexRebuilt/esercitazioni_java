@@ -1,6 +1,7 @@
 package Clinica;
 
 import Agenda.Agenda;
+import Errori.DayNotAvaible;
 
 import java.util.ArrayList;
 
@@ -8,6 +9,7 @@ public class Struttura {
     private Fisioterapista fisioterapista;
     private ArrayList<String> patologie;
     private String nome;
+    private Agenda agenda;
 
 
     public Struttura(String patologie,String nomestruttura,String fisioterapista,int idTerapista){
@@ -15,6 +17,7 @@ public class Struttura {
         addPatologie(patologie);
         this.fisioterapista=new Fisioterapista(fisioterapista,idTerapista);
         this.nome=nomestruttura;
+        this.agenda=new Agenda();
 
     }
 
@@ -27,7 +30,7 @@ public class Struttura {
         }
     }
 
-    private boolean checkPatologia(String pat) {
+    public boolean checkPatologia(String pat) {
         for(int i=0;i<patologie.size();i++){
             if (pat.equals(patologie.get(i))){
                 return true;
@@ -36,8 +39,17 @@ public class Struttura {
         return false;
     }
 
-    private void creaAppuntamento(){
-
+    public String getNome() {
+        return nome;
     }
 
+    public void creaAppuntamenti(String[] riga) {
+        try {
+            agenda.creaAppuntamenti(riga,nome);
+        } catch (DayNotAvaible dayNotAvaible) {
+            dayNotAvaible.printStackTrace();
+        }finally {
+            return;
+        }
+    }
 }

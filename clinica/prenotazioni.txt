@@ -1,7 +1,7 @@
 Rossi	Antonio	PATO1	
 Verdi	Mario	PATO2	
 Viola	Giuseppe	PATO3	
-Bianchi	Luigi	PATO4	2
+Bianchi Luigi	PATO4	2
 Gialli	Andrea	PATO5	
 Neri	Marco	PATO6	
 Rossi	Antonio	PATO7	4
